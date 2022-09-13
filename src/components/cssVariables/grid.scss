@@ -1,0 +1,38 @@
+// Extra extra large breakpoint / Huge desktop
+$breakpoint-xxl-min: 1600px;
+
+// Extra large breakpoint / Large desktop
+$breakpoint-xl-min: 1200px;
+$breakpoint-xl-max: ($breakpoint-xxl-min - 1px);
+
+// Large breakpoint / Wide desktop
+$breakpoint-lg-min: 992px;
+$breakpoint-lg-max: ($breakpoint-xl-min - 1px);
+
+// Medium breakpoint / Desktop
+$breakpoint-md-min: 768px;
+$breakpoint-md-max: ($breakpoint-lg-min - 1px);
+
+// Small breakpoint / Tablet
+$breakpoint-sm-min: 576px;
+$breakpoint-sm-max: ($breakpoint-md-min - 1px);
+
+// Extra small breakpoint / large phone
+$breakpoint-xs-min: 480px;
+$breakpoint-xs-max: ($breakpoint-sm-min - 1px);
+
+// Extra extra small breakpoint / phone
+$breakpoint-xxs-max: ($breakpoint-xs-min - 1px);
+
+// Extra extra small breakpoint / small phones
+$breakpoint-xxxs-max: 380px;
+
+:export {
+  xxxsBreakpoint: $breakpoint-xxxs-max;
+  xsBreakpoint: $breakpoint-xs-min;
+  smBreakpoint: $breakpoint-sm-min;
+  mdBreakpoint: $breakpoint-md-min;
+  lgBreakpoint: $breakpoint-lg-min;
+  xlBreakpoint: $breakpoint-xl-min;
+  xxlBreakpoint: $breakpoint-xxl-min;
+}
